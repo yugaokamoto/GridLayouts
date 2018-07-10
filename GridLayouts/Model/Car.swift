@@ -15,7 +15,7 @@ class Car: NSObject {
     var salePlace:NSNumber?
     var carDescription: String?
     var image:UIImage!
-    
+    var imageURL:URL?
     
     init(objectID:String!,name:String!,price:NSNumber?,salePlace:NSNumber?,carDescription: String?,image:UIImage!){
         

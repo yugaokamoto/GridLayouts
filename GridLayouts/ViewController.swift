@@ -25,7 +25,19 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
         gridLayout = GridLayout(numberOfColumns: 2)
         collectionView.collectionViewLayout = gridLayout
         collectionView.reloadData()
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(showImagePicker))
     }
+    
+    @objc func showImagePicker(){
+        let imagePickerController = UIImagePickerController()
+        imagePickerController.delegate = self
+        imagePickerController.allowsEditing = false
+        imagePickerController.sourceType = .photoLibrary
+        present(imagePickerController, animated: true, completion:  nil)
+    }
+    
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
         
@@ -59,3 +71,37 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
     }
     
 }
+
+
+extension ViewController: UIImagePickerControllerDelegate,UINavigationControllerDelegate{
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        picker.dismiss(animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        if let image = info[UIImagePickerControllerOriginalImage] as? UIImage{
+         picker.dismiss(animated: true, completion: nil)
+          let  imageUploadManeger = ImageUploadManeger()
+            imageUploadManeger.uploadImage(image, progressBlock: { (percentage) in
+                print("percentage: \(percentage)")
+            }, completionBlock: { [weak self](fileURL,errorMessage) in
+                guard  let srongSelf = self else{
+                    return
+                }
+                print("fileURL: \(fileURL)")
+                print("errorMessage: \(errorMessage)")
+        let carObj = Car(objectID: "nkakgjekjn", name: "Alforo", price: 30000, salePlace: nil, carDescription: nil, image: image)
+                carObj.imageURL = fileURL
+                print("carObj.imageURL: \(carObj.imageURL)")
+              srongSelf.performSegue(withIdentifier: "selectCar", sender: carObj)
+            })
+            
+        }
+    }
+    
+}
+
+
+
+

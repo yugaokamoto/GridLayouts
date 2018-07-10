@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		632C844138EA6BDEBD57DCFF /* Pods_GridLayouts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA0AD85386B5DA44F6428867 /* Pods_GridLayouts.framework */; };
 		92F3536A20F20023000B6FC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F3536920F20023000B6FC4 /* AppDelegate.swift */; };
 		92F3536C20F20023000B6FC4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F3536B20F20023000B6FC4 /* ViewController.swift */; };
 		92F3536F20F20023000B6FC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92F3536D20F20023000B6FC4 /* Main.storyboard */; };
@@ -24,6 +25,8 @@
 		92F3539720F35410000B6FC4 /* CarGroupCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F3539620F35410000B6FC4 /* CarGroupCollectionViewCell.swift */; };
 		92F3539920F357F6000B6FC4 /* CarGroupDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F3539820F357F6000B6FC4 /* CarGroupDatasource.swift */; };
 		92F3539B20F368CF000B6FC4 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F3539A20F368CF000B6FC4 /* ColorExtension.swift */; };
+		92F3539D20F383F2000B6FC4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 92F3539C20F383F2000B6FC4 /* GoogleService-Info.plist */; };
+		92F3539F20F38591000B6FC4 /* imageUploadManeger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F3539E20F38591000B6FC4 /* imageUploadManeger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +49,11 @@
 		92F3539620F35410000B6FC4 /* CarGroupCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarGroupCollectionViewCell.swift; sourceTree = "<group>"; };
 		92F3539820F357F6000B6FC4 /* CarGroupDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarGroupDatasource.swift; sourceTree = "<group>"; };
 		92F3539A20F368CF000B6FC4 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		92F3539C20F383F2000B6FC4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		92F3539E20F38591000B6FC4 /* imageUploadManeger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageUploadManeger.swift; sourceTree = "<group>"; };
+		D7C53BF88B024C906F0435C6 /* Pods-GridLayouts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GridLayouts.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GridLayouts/Pods-GridLayouts.debug.xcconfig"; sourceTree = "<group>"; };
+		DFF3D084AAC6E5F48ED6B96D /* Pods-GridLayouts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GridLayouts.release.xcconfig"; path = "Pods/Target Support Files/Pods-GridLayouts/Pods-GridLayouts.release.xcconfig"; sourceTree = "<group>"; };
+		EA0AD85386B5DA44F6428867 /* Pods_GridLayouts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GridLayouts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,17 +61,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				632C844138EA6BDEBD57DCFF /* Pods_GridLayouts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3079A86AFB0724FF6F21FEA6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D7C53BF88B024C906F0435C6 /* Pods-GridLayouts.debug.xcconfig */,
+				DFF3D084AAC6E5F48ED6B96D /* Pods-GridLayouts.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		92F3535D20F20023000B6FC4 = {
 			isa = PBXGroup;
 			children = (
 				92F3536820F20023000B6FC4 /* GridLayouts */,
 				92F3536720F20023000B6FC4 /* Products */,
+				3079A86AFB0724FF6F21FEA6 /* Pods */,
+				BFCED51C5DA082D0F7B318EA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,12 +103,14 @@
 				92F3536B20F20023000B6FC4 /* ViewController.swift */,
 				92F3538C20F25F7A000B6FC4 /* DetailViewController.swift */,
 				92F3539A20F368CF000B6FC4 /* ColorExtension.swift */,
+				92F3539E20F38591000B6FC4 /* imageUploadManeger.swift */,
 				92F3538E20F33BA2000B6FC4 /* Model */,
 				92F3538920F25DBD000B6FC4 /* GridLayouts */,
 				92F3536D20F20023000B6FC4 /* Main.storyboard */,
 				92F3537020F20027000B6FC4 /* Assets.xcassets */,
 				92F3537220F20027000B6FC4 /* LaunchScreen.storyboard */,
 				92F3537520F20027000B6FC4 /* Info.plist */,
+				92F3539C20F383F2000B6FC4 /* GoogleService-Info.plist */,
 			);
 			path = GridLayouts;
 			sourceTree = "<group>";
@@ -124,6 +146,14 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		BFCED51C5DA082D0F7B318EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA0AD85386B5DA44F6428867 /* Pods_GridLayouts.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -131,9 +161,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92F3537820F20027000B6FC4 /* Build configuration list for PBXNativeTarget "GridLayouts" */;
 			buildPhases = (
+				1513092A0D462A56F34DF8BC /* [CP] Check Pods Manifest.lock */,
 				92F3536220F20023000B6FC4 /* Sources */,
 				92F3536320F20023000B6FC4 /* Frameworks */,
 				92F3536420F20023000B6FC4 /* Resources */,
+				92986F9E6587F9FD1BBAA235 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -185,10 +217,58 @@
 				92F3537420F20027000B6FC4 /* LaunchScreen.storyboard in Resources */,
 				92F3537120F20027000B6FC4 /* Assets.xcassets in Resources */,
 				92F3536F20F20023000B6FC4 /* Main.storyboard in Resources */,
+				92F3539D20F383F2000B6FC4 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1513092A0D462A56F34DF8BC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GridLayouts-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92986F9E6587F9FD1BBAA235 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GridLayouts/Pods-GridLayouts-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Haneke/Haneke.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Haneke.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GridLayouts/Pods-GridLayouts-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		92F3536220F20023000B6FC4 /* Sources */ = {
@@ -201,6 +281,7 @@
 				92F3538820F25D95000B6FC4 /* File.swift in Sources */,
 				92F3539920F357F6000B6FC4 /* CarGroupDatasource.swift in Sources */,
 				92F3539B20F368CF000B6FC4 /* ColorExtension.swift in Sources */,
+				92F3539F20F38591000B6FC4 /* imageUploadManeger.swift in Sources */,
 				92F3539020F33C3C000B6FC4 /* Banner.swift in Sources */,
 				92F3536A20F20023000B6FC4 /* AppDelegate.swift in Sources */,
 				92F3538620F25D56000B6FC4 /* GridLayout.swift in Sources */,
@@ -350,6 +431,7 @@
 		};
 		92F3537920F20027000B6FC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7C53BF88B024C906F0435C6 /* Pods-GridLayouts.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -368,6 +450,7 @@
 		};
 		92F3537A20F20027000B6FC4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFF3D084AAC6E5F48ED6B96D /* Pods-GridLayouts.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
